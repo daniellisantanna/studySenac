@@ -1,0 +1,144 @@
+/*body Corpo da página*/
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+   
+  }
+
+/*buscar- search*/
+.search-container {
+  float: right;
+}
+
+.search-container input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+  background-color: #c2f3e5;
+  border-color: transparent;
+}
+.search-container input:hover{
+    background-color: #5ddeb9;
+    border-color: transparent;
+  }
+
+.search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #258447;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  .search-container {
+    float: none;
+  }
+  .search-container input[type=text], .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .search-container input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+  
+  h2,h3,h4,p{color: #787878;} 
+  h2{
+    font-size:26px;
+    text-align: center;
+  }
+  h3{
+    font-size:22px;
+    text-align: center;
+  }
+  h4{
+    text-align: center;
+  }
+  p {
+  text-indent: 50px;
+  text-align: center;
+  letter-spacing: 3px;
+  }
+
+/* Navegação Menu*/
+#menu-horizontal ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #258447;
+    
+}
+#menu-horizontal li{
+  float:left;
+}
+#menu-horizontal li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+#menu-horizontal li a:hover {
+  background-color: #258447;
+}
+
+.galera{
+    float:left;
+    width: 33.33%;
+    }
+
+@media screen and (max-width: 500px) {
+.column {
+width: 100%;
+}
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  .button-default{
+    background-color: #49bf9d;
+    border: 3px solid #49bf9d;
+    color: white;
+    padding: .75em 1.5em;
+    border-radius: 5px;
+    font-size: .8em;
+    display: inline-block;
+    width: auto;
+    transition: all .5s;
+    cursor: pointer;
+  }
+
+  .button-default:hover{
+    background-color: #258447;
+    border-color: transparent;
+  }
+
+  /*Rodape- Footer*/
+.rodape{
+  height: 80px;
+	color: white;
+	font-size: 14px;
+	text-align: center;
+	text-shadow: 2px 2px 2px black;
+	background: #258447;
+  line-height: 80px;
+}

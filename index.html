@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Nature - Bem-Vinda!</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Danielli">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+        <link rel="stylesheet" href="css/estilo.css">
+
+    </head>
+    <body>
+        
+        <header>
+           <a href="index.html" class="main-header-link- imagem-link">
+            <img src="images/avatar.jpg" alt="logotipo">
+            </a>
+             <div class="search-container">
+            <form action="/action_page.php">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+            </div>
+        </header>    
+            
+            <main>
+                <nav id="menu-horizontal">
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="pagina.html">Alimentos Orgânicos</a></li>
+                        <li><a href="#">Bebidas Orgânicas</a></li>
+                        <li><a href="#">Suplementos</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </nav>
+            
+                
+                <div class="container-slideshow">
+                    <span id="previous"><i data-feather="chevron-left"></i></span>
+                    <span id="next"><i data-feather="chevron-right"></i></span>
+                    <div id="slider" class="slider">
+                        <img src="images/ofertas.png" style="width:100%">
+                        <img src="images/ofertas1.png" style="width:100%">
+                        <img src="images/ofertas2.png" style="width:100%">
+                    </div>
+                </div>
+                <script src="https://unpkg.com/feather-icons"></script>
+                <script src="js/main.js"></script>
+                <!--Java- atividade 3 sobre slider-->
+
+            <div class="article">
+                <div class="galera">
+                    <img src="images/farinha_de_trigo_organica_branca.jpg" style="width:90%">
+                    <h2>Farinha de Trigo Orgânica 400g</h2>
+                    <h3> R$13,90</h3>
+                    <input type="submit" value="COMPRAR" class="button-default button-default-stroke button-default-big">
+                </div>
+
+                <div class="galera">
+                    <img src="images/arroz_cateto_integral_organico.jpg" style="width:90%">
+                    <h2>Arroz Cateto Integral 1kg</h2>
+                    <h3> R$24,90</h3>
+                    <input type="submit" value="COMPRAR" class="button-default button-default-stroke button-default-big">
+                </div>
+                
+            </div>
+            <!-- Java- atividade 3- campos obrigatorios-->
+            <div class="aside">
+                <div class="title">Welcome</div>
+                <div class="subtitle">Cadastre seu melhor e-mail para ficar sabendo quando uma nova oferta
+                    será aberta!</div>
+                <br>
+
+                    <form action="#" method="POST" name="formulario" onsubmit="return validar(this);">
+                          
+                        <label for="nome">Nome</label>
+                        <input placeholder="Nome Completo" type="text" name="nome" id="nome">
+                        <span class="msg-erro msg-nome"></span> 
+                            <br>
+                    
+                        <label for="email">Email</label>
+                        <input type="text" name="email" id="email">
+                        
+
+                        <label for="telefone">Telefone</label>
+                        <input type="txt" name="telefone" id="telefone">
+                        <span class="msg-erro msg-telefone"></span> 
+
+                        <input type="submit" value="Enviar" class="button-default button-default-stroke button-default-big" onclick="validar()" name="botao">
+                    </form>
+        </main>
+        
+        <footer class="rodape">
+       
+            <p>Copyright &copy; 2021</p>
+            
+        </footer>
+        
+      <script src="js/valida.js"></script>
+    
+    </body>
+</html>
